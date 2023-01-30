@@ -96,6 +96,12 @@ body {
 .portfolioWebsite nav.sticky .menu a:hover {
   color: #0e2431;
 }
+.portfolioWebsite .media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .portfolioWebsite .navbar .media-icons a {
   color: #4070f4;
   font-size: 18px;

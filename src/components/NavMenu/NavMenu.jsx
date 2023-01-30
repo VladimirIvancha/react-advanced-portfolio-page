@@ -1,12 +1,29 @@
 import React from "react";
+import {
+    darkTheme,
+    lightTheme,
+  navInitialDataEn,
+  navInitialDataRu,
+  navMenuInitialDataEn,
+  navMenuInitialDataRu,
+} from "../../utils/initialData";
+import NavMenuItem from "./NavMenuItem/NavMenuItem";
 
 function NavMenu({
+  isDarkThemeActive,
+  setDarkThemeActive,
   isNavBarOpen,
   isMobile,
   scrolledDown,
   setNavBarOpen,
   handleCancelBtnClick,
+  isEnLangActive,
+  setEnLang,
 }) {
+  const mainData = !isEnLangActive ? navInitialDataRu : navInitialDataEn;
+  const data = !isEnLangActive ? navMenuInitialDataRu : navMenuInitialDataEn;
+  const lightData = !isDarkThemeActive ? lightTheme : darkTheme;
+
   const scrollBtnClass = `portfolioWebsite__navigation-menu ${
     scrolledDown && "sticky"
   }`;
@@ -21,55 +38,37 @@ function NavMenu({
   function handleMenuBtnClick() {
     setNavBarOpen(true);
   }
+  function handleThemeChange() {
+    setDarkThemeActive(!isDarkThemeActive);
+  }
+  function handleLangChange() {
+    setEnLang(!isEnLangActive);
+  }
 
   return (
     <nav className={scrollBtnClass}>
       <div className={navBarClass}>
         <div className="logo">
-          <a href="#">Portfolio.</a>
+          <a href="#">{mainData.title}</a>
         </div>
         <div className={menuBtnBGClass}>
           <ul className="menu">
-            <li>
-              <a href="#home" onClick={handleCancelBtnClick}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" onClick={handleCancelBtnClick}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#skills" onClick={handleCancelBtnClick}>
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#services" onClick={handleCancelBtnClick}>
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={handleCancelBtnClick}>
-                Contact
-              </a>
-            </li>
-            <div className="cancel-btn" onClick={handleCancelBtnClick}>
-              <i className="fas fa-times"></i>
-            </div>
+            {data.map((item) => (
+              <NavMenuItem
+                key={item.id}
+                item={item}
+                handleCancelBtnClick={handleCancelBtnClick}
+              />
+            ))}
           </ul>
         </div>
         <div className="media-icons">
-          <a href="#">
-            <i className="fab fa-facebook-f"></i>
+          <a href="#" onClick={handleLangChange}>
+            <p>{mainData.lang}</p>
           </a>
-          <a href="#">
-          <i className="fa-solid fa-moon-over-sun"></i>
+          <a href="#" onClick={handleThemeChange}>
+            <i className={lightData.iconClass}></i>
           </a>
-          {/* <a href="#">
-            <i className="fa-thin fa-moon-over-sun"></i>
-          </a> */}
         </div>
       </div>
       <div className={menuBtnClass} onClick={handleMenuBtnClick}>

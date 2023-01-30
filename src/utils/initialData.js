@@ -1,3 +1,75 @@
+const lightTheme = {
+  iconClass: "fa-solid fa-moon",
+};
+const darkTheme = {
+  iconClass: "fa-solid fa-sun",
+};
+
+const navInitialDataRu = {
+  title: "Портфолио.",
+  lang: "EN",
+};
+const navInitialDataEn = {
+  title: "Portfolio.",
+  lang: "RU",
+};
+
+const navMenuInitialDataRu = [
+  {
+    id: "home",
+    link: "#home",
+    title: "Главная",
+  },
+  {
+    id: "about",
+    link: "#about",
+    title: "Обо мне",
+  },
+  {
+    id: "Skills",
+    link: "#Skills",
+    title: "Мой стек",
+  },
+  {
+    id: "services",
+    link: "#services",
+    title: "Моё портфолио",
+  },
+  {
+    id: "contact",
+    link: "#contact",
+    title: "Контакты",
+  },
+];
+
+const navMenuInitialDataEn = [
+  {
+    id: "home",
+    link: "#home",
+    title: "Home",
+  },
+  {
+    id: "about",
+    link: "#about",
+    title: "About",
+  },
+  {
+    id: "Skills",
+    link: "#Skills",
+    title: "Skills",
+  },
+  {
+    id: "services",
+    link: "#services",
+    title: "Services",
+  },
+  {
+    id: "contact",
+    link: "#contact",
+    title: "Contact",
+  },
+];
+
 const homeInitialDataRu = {
   greeting: "Привет,",
   introducing: "Меня зовут Владимир",
@@ -135,19 +207,25 @@ const portfolioInitialDataEn = [
 ];
 
 const contactMeInitialDataRu = {
-    title: "Контакты",
-    subtitle: "Остались вопросы?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.",
-    btnText: "Напишите мне"
+  title: "Контакты",
+  subtitle: "Остались вопросы?",
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.",
+  btnText: "Напишите мне",
 };
 const contactMeInitialDataEn = {
-    title: "Contact Me",
-    subtitle: "Have Any Questions?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.",
-    btnText: "Write Me"
-}
+  title: "Contact Me",
+  subtitle: "Have Any Questions?",
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.",
+  btnText: "Write Me",
+};
 
 export {
+  lightTheme,
+  darkTheme,
+  navInitialDataRu,
+  navInitialDataEn,
+  navMenuInitialDataRu,
+  navMenuInitialDataEn,
   homeInitialDataRu,
   homeInitialDataEn,
   aboutMeInitialDataRu,

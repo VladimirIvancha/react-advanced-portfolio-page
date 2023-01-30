@@ -11,6 +11,7 @@ import NavMenu from "../NavMenu/NavMenu";
 
 function App() {
   // Стейты
+  const [isDarkThemeActive, setDarkThemeActive] = useState(false);
   const [isNavBarOpen, setNavBarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [scrolledDown, setScrolledDown] = useState(true);
@@ -65,11 +66,15 @@ function App() {
 
       {/* navgaition menu */}
       <NavMenu
+        isDarkThemeActive={isDarkThemeActive}
+        setDarkThemeActive={setDarkThemeActive}
         isNavBarOpen={isNavBarOpen}
         isMobile={isMobile}
         scrolledDown={scrolledDown}
         setNavBarOpen={setNavBarOpen}
         handleCancelBtnClick={handleCancelBtnClick}
+        isEnLangActive={isEnLangActive}
+        setEnLang={setEnLang}
       />
 
       {/* Home Section Start */}

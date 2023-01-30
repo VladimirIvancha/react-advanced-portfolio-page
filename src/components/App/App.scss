@@ -89,6 +89,14 @@ body {
   & nav.sticky .menu a:hover {
     color: #0e2431;
   }
+
+  & .media-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   & .navbar .media-icons a {
     color: #4070f4;
     font-size: 18px;

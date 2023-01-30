@@ -238,7 +238,7 @@ body {
   border-radius: 12px;
 }
 .portfolioWebsite .about-details .right {
-  width: 55%;
+  width: 50%;
 }
 .portfolioWebsite section .topic {
   color: #0e2431;
@@ -368,6 +368,11 @@ body {
 }
 .portfolioWebsite .contact {
   background: #f0f8ff;
+}
+.portfolioWebsite .contact__links {
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
 }
 .portfolioWebsite .contact .content {
   margin: 0 auto;

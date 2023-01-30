@@ -65,11 +65,11 @@ function NavMenu({
             <i className="fab fa-facebook-f"></i>
           </a>
           <a href="#">
-            <i className="fab fa-twitter"></i>
+          <i className="fa-solid fa-moon-over-sun"></i>
           </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
-          </a>
+          {/* <a href="#">
+            <i className="fa-thin fa-moon-over-sun"></i>
+          </a> */}
         </div>
       </div>
       <div className={menuBtnClass} onClick={handleMenuBtnClick}>

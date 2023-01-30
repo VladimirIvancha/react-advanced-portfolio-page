@@ -1,26 +1,23 @@
 import React from "react";
+import { mySkillsInitialDataEn, mySkillsInitialDataRu } from "../../utils/initialData";
 
-function MySkills() {
+function MySkills({isEnLangActive}) {
+    const data = !isEnLangActive ? mySkillsInitialDataRu : mySkillsInitialDataEn;
+
   return (
     <section className="skills" id="skills">
       <div className="content">
         <div className="title">
-          <span>My Skills</span>
+          <span>{data.title}</span>
         </div>
         <div className="skills-details">
           <div className="text">
-            <div className="topic">Skills Reflects Our Knowledge</div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-              natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur
-              reiciendis ut praesentium minima ad, quos, officia! Illo libero,
-              et, distinctio repellat sed nesciunt est modi quaerat placeat.
-              Quod molestiae, alias?
-            </p>
+            <div className="topic">{data.subtitle}</div>
+            <p>{data.text}</p>
             <div className="experience">
-              <div className="num">10</div>
+              <div className="num">2</div>
               <div className="exp">
-                Years Of <br /> Experience
+                {data.yearsTextBB} <br /> {data.yearsTextAB}
               </div>
             </div>
           </div>
@@ -38,7 +35,7 @@ function MySkills() {
               <div className="per">70%</div>
             </div>
             <div className="box">
-              <div className="topic">PHP</div>
+              <div className="topic">SCSS</div>
               <div className="per">60%</div>
             </div>
           </div>

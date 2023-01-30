@@ -240,7 +240,7 @@ body {
     border-radius: 12px;
   }
   & .about-details .right {
-    width: 55%;
+    width: 50%;
   }
   & section .topic {
     color: #0e2431;
@@ -375,6 +375,12 @@ body {
   /* Contact Me CSS */
   & .contact {
     background: #f0f8ff;
+
+    &__links {
+      color: #4070f4;
+      font-size: 18px;
+      margin: 0 6px;
+    }
   }
   & .contact .content {
     margin: 0 auto;

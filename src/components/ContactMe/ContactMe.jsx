@@ -1,22 +1,36 @@
 import React from "react";
+import {
+  contactMeInitialDataEn,
+  contactMeInitialDataRu,
+} from "../../utils/initialData";
 
-function ContactMe() {
+function ContactMe({ isEnLangActive }) {
+  const data = !isEnLangActive
+    ? contactMeInitialDataRu
+    : contactMeInitialDataEn;
+
   return (
     <section className="contact" id="contact">
       <div className="content">
         <div className="title">
-          <span>Contact Me</span>
+          <span>{data.title}</span>
         </div>
         <div className="text">
-          <div className="topic">Have Any Project?</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-            neque ipsum corrupti dolores, facere numquam voluptate aspernatur
-            sit perferendis qui nisi modi! Recusandae deserunt consequatur
-            voluptatibus alias repellendus nobis eligendi.
-          </p>
+          <div className="topic">{data.subtitle}</div>
+          <p>{data.text}</p>
           <div className="button">
-            <button>Let's Chat</button>
+            <button>{data.btnText}</button>
+          </div>
+          <div className="media-icons">
+            <a className="contact__links" href="#">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a className="contact__links" href="#">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a className="contact__links" href="#">
+              <i className="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
       </div>

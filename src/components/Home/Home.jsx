@@ -1,17 +1,20 @@
 import React from "react";
+import { homeInitialDataEn, homeInitialDataRu } from "../../utils/initialData";
 
-function Home() {
+function Home({isEnLangActive}) {
+  const data = !isEnLangActive ? homeInitialDataRu : homeInitialDataEn;
+
   return (
     <section className="home" id="home">
       <div className="home-content">
         <div className="text">
-          <div className="text-one">Hello,</div>
-          <div className="text-two">I'm Prem Shahi</div>
-          <div className="text-three">UI/UX Designer</div>
-          <div className="text-four">From Nepal</div>
+          <div className="text-one">{data.greeting}</div>
+          <div className="text-two">{data.introducing}</div>
+          <div className="text-three">{data.prophecy}</div>
+          <div className="text-four">{data.location}</div>
         </div>
         <div className="button">
-          <button>Hire Me</button>
+          <button>{data.btnText}</button>
         </div>
       </div>
     </section>

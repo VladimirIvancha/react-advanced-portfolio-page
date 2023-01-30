@@ -14,12 +14,13 @@ function App() {
   const [isNavBarOpen, setNavBarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [scrolledDown, setScrolledDown] = useState(true);
+  const [isEnLangActive, setEnLang] = useState(false);
 
   // Классы
   const mainClass = `portfolioWebsite ${
     isNavBarOpen && isMobile && "portfolioWebsite_active"
   }`;
-  
+
   // Реакции на события
   // Реакции на изменение разрешения экрана
   useEffect(() => {
@@ -56,7 +57,7 @@ function App() {
   return (
     <div className={mainClass} onMouseDown={handleMouseClick}>
       {/* Move to up button */}
-      <MoveToUpBtn 
+      <MoveToUpBtn
         isNavBarOpen={isNavBarOpen}
         isMobile={isMobile}
         scrolledDown={scrolledDown}
@@ -72,20 +73,20 @@ function App() {
       />
 
       {/* Home Section Start */}
-      <Home />
+      <Home isEnLangActive={isEnLangActive} />
 
       {/* About Section Start */}
-      <AboutMe />
+      <AboutMe isEnLangActive={isEnLangActive} />
 
       {/* My Skill Section Start */}
       {/* Section Tag and Other Div will same where we need to put same CSS */}
-      <MySkills />
+      <MySkills isEnLangActive={isEnLangActive} />
 
       {/* My Services Section Start */}
-      <MyPortfolio />
+      <MyPortfolio isEnLangActive={isEnLangActive} />
 
       {/* Contact Me section Start */}
-      <ContactMe />
+      <ContactMe isEnLangActive={isEnLangActive} />
 
       {/* Footer Section Start */}
       <Footer />

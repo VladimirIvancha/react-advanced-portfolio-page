@@ -1,5 +1,11 @@
 @import '../assets/vendor/normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  --dark-background-color: #111;
+  --semi-dark-background-color: #242526;
+  --dark-text-color: #eee;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -47,6 +53,10 @@ body {
 .portfolioWebsite_active {
   overflow: hidden;
 }
+.portfolioWebsite_theme-dark {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
 .portfolioWebsite__navigation-menu {
   position: sticky;
   width: 100%;
@@ -86,10 +96,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+.portfolioWebsite__navigation-menu .media-icons_sidebar {
+  display: none;
+}
 .portfolioWebsite__navigation-menu-link {
-  color: #4070f4;
+  color: #0e2431;
   font-size: 18px;
   margin: 0 6px;
+  transition: all 0.4s ease;
+}
+.portfolioWebsite__navigation-menu-link:hover {
+  color: #4070f4;
+  cursor: pointer;
 }
 .portfolioWebsite__navigation-menu-item-link {
   font-size: 18px;
@@ -128,6 +146,9 @@ body {
 .portfolioWebsite__navigation-menu_sticky .navbar .logo a {
   color: #fff;
 }
+.portfolioWebsite__navigation-menu_sticky .media-icons a:hover {
+  color: #0e2431;
+}
 .portfolioWebsite__navigation-menu_sticky .media-icons a {
   color: #fff;
 }
@@ -140,6 +161,31 @@ body {
 }
 .portfolioWebsite__navigation-menu_sticky .menu a:hover {
   color: #0e2431;
+}
+.portfolioWebsite__navigation-menu_theme-dark {
+  background-color: var(--semi-dark-background-color);
+}
+.portfolioWebsite__navigation-menu_theme-dark .menu-btn {
+  color: var(--dark-text-color);
+}
+.portfolioWebsite__navigation-menu_theme-dark .menu-btn:hover {
+  color: #4070f4;
+}
+.portfolioWebsite__navigation-menu_theme-dark .menu a {
+  color: var(--dark-text-color);
+}
+.portfolioWebsite__navigation-menu_theme-dark .navbar .logo a {
+  color: var(--dark-text-color);
+}
+.portfolioWebsite__navigation-menu_theme-dark .media-icons a {
+  color: var(--dark-text-color);
+}
+.portfolioWebsite__navigation-menu_theme-dark .menu a:hover {
+  color: #4070f4;
+}
+.portfolioWebsite__navigation-menu_theme-dark .media-icons a:hover {
+  color: #4070f4;
+  cursor: pointer;
 }
 .portfolioWebsite .home {
   height: 100vh;
@@ -162,11 +208,17 @@ body {
   font-size: 25px;
   color: #0e2431;
 }
+.portfolioWebsite_theme-dark .home .text-one {
+  color: var(--dark-text-color);
+}
 .portfolioWebsite .home .text-two {
   color: #0e2431;
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
+}
+.portfolioWebsite_theme-dark .home .text-two {
+  color: var(--dark-text-color);
 }
 .portfolioWebsite .home .text-three {
   font-size: 40px;
@@ -177,6 +229,9 @@ body {
   font-size: 23px;
   margin: 5px 0;
   color: #0e2431;
+}
+.portfolioWebsite_theme-dark .home .text-four {
+  color: var(--dark-text-color);
 }
 .portfolioWebsite .home .button {
   margin: 14px 0;
@@ -199,7 +254,10 @@ body {
   color: #4070f4;
 }
 .portfolioWebsite section {
-  padding-top: 40px;
+  padding: 40px 0;
+}
+.portfolioWebsite_theme-dark section {
+  background-color: var(--semi-dark-background-color);
 }
 .portfolioWebsite section .content {
   width: 80%;
@@ -222,6 +280,9 @@ body {
   font-weight: 600;
   position: relative;
   padding-bottom: 8px;
+}
+.portfolioWebsite_theme-dark section .title span {
+  color: var(--dark-text-color);
 }
 .portfolioWebsite section .title span::before,
 .portfolioWebsite section .title span::after {
@@ -257,9 +318,15 @@ body {
   font-weight: 500;
   margin-bottom: 10px;
 }
+.portfolioWebsite_theme-dark section .topic {
+  color: var(--dark-text-color);
+}
 .portfolioWebsite .about-details .right p {
   text-align: justify;
   color: #0e2431;
+}
+.portfolioWebsite_theme-dark .about-details .right p {
+  color: var(--dark-text-color);
 }
 .portfolioWebsite section .button {
   margin: 16px 0;
@@ -284,6 +351,9 @@ body {
 .portfolioWebsite .skills {
   background: #f0f8ff;
 }
+.portfolioWebsite_theme-dark .skills {
+  background: var(--dark-background-color);
+}
 .portfolioWebsite .skills .content {
   padding: 40px 0;
 }
@@ -299,6 +369,9 @@ body {
   color: #0e2431;
   text-align: justify;
 }
+.portfolioWebsite_theme-dark .skills-details p {
+  color: var(--dark-text-color);
+}
 .portfolioWebsite .skills .skills-details .experience {
   display: flex;
   align-items: center;
@@ -308,12 +381,18 @@ body {
   color: #0e2431;
   font-size: 80px;
 }
+.portfolioWebsite_theme-dark .skills-details .experience .num {
+  color: var(--dark-text-color);
+}
 .portfolioWebsite .skills-details .experience .exp {
   color: #0e2431;
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
   margin: 0 6px;
+}
+.portfolioWebsite_theme-dark .skills-details .experience .exp {
+  color: var(--dark-text-color);
 }
 .portfolioWebsite .skills-details .boxes {
   width: 45%;
@@ -385,6 +464,9 @@ body {
   font-size: 18px;
   margin: 0 6px;
 }
+.portfolioWebsite_theme-dark .contact {
+  background: var(--dark-background-color);
+}
 .portfolioWebsite .contact .content {
   margin: 0 auto;
   padding: 30px 0;
@@ -399,6 +481,9 @@ body {
   padding: 15px 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
+}
+.portfolioWebsite_theme-dark footer {
+  background-color: var(--semi-dark-background-color);
 }
 .portfolioWebsite footer .text span {
   font-size: 17px;
@@ -510,11 +595,21 @@ body {
     color: #fff;
     margin: 10px 0;
   }
+  .portfolioWebsite nav .navbar .menu a:hover {
+    color: #4070f4;
+  }
   .portfolioWebsite nav.sticky .menu a:hover {
     color: #4070f4;
   }
   .portfolioWebsite nav .navbar .media-icons {
     display: none;
+  }
+  .portfolioWebsite nav .navbar .media-icons_sidebar {
+    display: flex;
+  }
+  .portfolioWebsite nav .navbar .media-icons_sidebar a {
+    color: #fff;
+    margin: 60px;
   }
   .portfolioWebsite nav .menu-btn,
   .portfolioWebsite .navbar .menu .cancel-btn {

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
+:root {
+  --dark-background-color: #111;
+  --semi-dark-background-color: #242526;
+  --dark-text-color: #eee;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -30,6 +36,11 @@ body {
 
   &_active {
     overflow: hidden;
+  }
+
+  &_theme-dark {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
   }
 
   /* navbar styling */
@@ -76,12 +87,22 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+
+      &_sidebar {
+        display: none;
+      }
     }
 
     &-link {
-      color: #4070f4;
+      color: #0e2431;
       font-size: 18px;
       margin: 0 6px;
+      transition: all 0.4s ease;
+    }
+
+    &-link:hover {
+      color: #4070f4;
+      cursor: pointer;
     }
 
     &-item-link {
@@ -127,6 +148,10 @@ body {
         color: #fff;
       }
 
+      & .media-icons a:hover {
+        color: #0e2431;
+      }
+
       & .media-icons a {
         color: #fff;
       }
@@ -144,6 +169,39 @@ body {
         color: #0e2431;
       }
     }
+
+    &_theme-dark {
+      background-color: var(--semi-dark-background-color);
+
+      & .menu-btn {
+        color: var(--dark-text-color);
+      }
+
+      & .menu-btn:hover {
+        color: #4070f4;
+      }
+
+      & .menu a {
+        color: var(--dark-text-color);
+      }
+
+      & .navbar .logo a {
+        color: var(--dark-text-color);
+      }
+
+      & .media-icons a {
+        color: var(--dark-text-color);
+      }
+
+      & .menu a:hover {
+        color: #4070f4;
+      }
+
+      & .media-icons a:hover {
+        color: #4070f4;
+        cursor: pointer;
+      }
+    }
   }
 
   /* home section styling */
@@ -156,6 +214,7 @@ body {
     background-attachment: fixed;
     font-family: "Ubuntu", sans-serif;
   }
+
   & .home .home-content {
     width: 90%;
     height: 100%;
@@ -164,16 +223,27 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+
   & .home .text-one {
     font-size: 25px;
     color: #0e2431;
   }
+
+  &_theme-dark .home .text-one {
+    color: var(--dark-text-color);
+  }
+
   & .home .text-two {
     color: #0e2431;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
   }
+
+  &_theme-dark .home .text-two {
+    color: var(--dark-text-color);
+  }
+
   & .home .text-three {
     font-size: 40px;
     margin: 5px 0;
@@ -184,6 +254,11 @@ body {
     margin: 5px 0;
     color: #0e2431;
   }
+
+  &_theme-dark .home .text-four {
+    color: var(--dark-text-color);
+  }
+
   & .home .button {
     margin: 14px 0;
   }
@@ -209,8 +284,13 @@ body {
   /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
   & section {
-    padding-top: 40px;
+    padding: 40px 0;
   }
+
+  &_theme-dark section {
+    background-color: var(--semi-dark-background-color);
+  }
+
   & section .content {
     width: 80%;
     margin: 40px auto;
@@ -233,6 +313,11 @@ body {
     position: relative;
     padding-bottom: 8px;
   }
+
+  &_theme-dark section .title span {
+    color: var(--dark-text-color);
+  }
+
   & section .title span::before,
   section .title span::after {
     content: "";
@@ -267,10 +352,20 @@ body {
     font-weight: 500;
     margin-bottom: 10px;
   }
+
+  &_theme-dark section .topic {
+    color: var(--dark-text-color);
+  }
+
   & .about-details .right p {
     text-align: justify;
     color: #0e2431;
   }
+
+  &_theme-dark .about-details .right p {
+    color: var(--dark-text-color);
+  }
+
   & section .button {
     margin: 16px 0;
   }
@@ -296,6 +391,11 @@ body {
   & .skills {
     background: #f0f8ff;
   }
+
+  &_theme-dark .skills {
+    background: var(--dark-background-color);
+  }
+
   & .skills .content {
     padding: 40px 0;
   }
@@ -311,6 +411,11 @@ body {
     color: #0e2431;
     text-align: justify;
   }
+
+  &_theme-dark .skills-details p {
+    color: var(--dark-text-color);
+  }
+
   & .skills .skills-details .experience {
     display: flex;
     align-items: center;
@@ -320,6 +425,11 @@ body {
     color: #0e2431;
     font-size: 80px;
   }
+
+  &_theme-dark .skills-details .experience .num {
+    color: var(--dark-text-color);
+  }
+
   & .skills-details .experience .exp {
     color: #0e2431;
     margin-left: 20px;
@@ -327,6 +437,11 @@ body {
     font-weight: 500;
     margin: 0 6px;
   }
+
+  &_theme-dark .skills-details .experience .exp {
+    color: var(--dark-text-color);
+  }
+
   & .skills-details .boxes {
     width: 45%;
     display: flex;
@@ -401,6 +516,11 @@ body {
       margin: 0 6px;
     }
   }
+
+  &_theme-dark .contact {
+    background: var(--dark-background-color);
+  }
+
   & .contact .content {
     margin: 0 auto;
     padding: 30px 0;
@@ -418,6 +538,11 @@ body {
     text-align: center;
     font-family: "Poppins", sans-serif;
   }
+
+  &_theme-dark footer {
+    background-color: var(--semi-dark-background-color);
+  }
+
   & footer .text span {
     font-size: 17px;
     font-weight: 400;
@@ -543,11 +668,25 @@ body {
       color: #fff;
       margin: 10px 0;
     }
+
+    & nav .navbar .menu a:hover {
+        color: #4070f4;
+    }
+
     & nav.sticky .menu a:hover {
       color: #4070f4;
     }
     & nav .navbar .media-icons {
       display: none;
+
+      &_sidebar {
+        display: flex;
+      }
+
+      &_sidebar a {
+        color: #fff;
+        margin: 60px;
+      }
     }
     & nav .menu-btn,
     .navbar .menu .cancel-btn {

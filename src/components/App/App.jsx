@@ -20,7 +20,7 @@ function App() {
   // Классы
   const mainClass = `portfolioWebsite ${
     isNavBarOpen && isMobile && "portfolioWebsite_active"
-  }`;
+  } ${isDarkThemeActive && "portfolioWebsite_theme-dark"}`;
 
   // Реакции на события
   // Реакции на изменение разрешения экрана

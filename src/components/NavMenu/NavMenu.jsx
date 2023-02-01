@@ -26,7 +26,7 @@ function NavMenu({
 
   const scrollBtnClass = `portfolioWebsite__navigation-menu ${
     scrolledDown && "portfolioWebsite__navigation-menu_sticky"
-  }`;
+  } ${isDarkThemeActive && "portfolioWebsite__navigation-menu_theme-dark"}`;
   const navBarClass = `navbar ${isNavBarOpen && isMobile && "active"}`;
   const menuBtnBGClass = `portfolioWebsite__sidebar ${
     isNavBarOpen && isMobile && "portfolioWebsite__sidebar_opened"
@@ -34,6 +34,7 @@ function NavMenu({
   const menuBtnClass = `menu-btn ${
     isNavBarOpen && isMobile && "menu-btn_active"
   }`;
+  const mobileMediaIconsClass = "media-icons media-icons_sidebar";
 
   function handleMenuBtnClick() {
     setNavBarOpen(true);
@@ -60,13 +61,21 @@ function NavMenu({
                 handleCancelBtnClick={handleCancelBtnClick}
               />
             ))}
+            <div className={mobileMediaIconsClass}>
+                <a className="portfolioWebsite__navigation-menu-link" onClick={handleLangChange}>
+                    <p>{mainData.lang}</p>
+                </a>
+                <a className="portfolioWebsite__navigation-menu-link" onClick={handleThemeChange}>
+                    <i className={lightData.iconClass}></i>
+                </a>
+            </div>
           </ul>
         </div>
         <div className="media-icons">
-          <a className="portfolioWebsite__navigation-menu-link" href="#" onClick={handleLangChange}>
+          <a className="portfolioWebsite__navigation-menu-link" onClick={handleLangChange}>
             <p>{mainData.lang}</p>
           </a>
-          <a className="portfolioWebsite__navigation-menu-link" href="#" onClick={handleThemeChange}>
+          <a className="portfolioWebsite__navigation-menu-link" onClick={handleThemeChange}>
             <i className={lightData.iconClass}></i>
           </a>
         </div>

@@ -26,8 +26,8 @@ const navMenuInitialDataRu = [
     title: "Обо мне",
   },
   {
-    id: "Skills",
-    link: "#Skills",
+    id: "skills",
+    link: "#skills",
     title: "Мой стек",
   },
   {
@@ -54,8 +54,8 @@ const navMenuInitialDataEn = [
     title: "About",
   },
   {
-    id: "Skills",
-    link: "#Skills",
+    id: "skills",
+    link: "#skills",
     title: "Skills",
   },
   {

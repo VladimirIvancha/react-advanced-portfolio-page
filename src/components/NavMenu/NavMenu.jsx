@@ -25,7 +25,7 @@ function NavMenu({
   const lightData = !isDarkThemeActive ? lightTheme : darkTheme;
 
   const scrollBtnClass = `portfolioWebsite__navigation-menu ${
-    scrolledDown && "sticky"
+    scrolledDown && "portfolioWebsite__navigation-menu_sticky"
   }`;
   const navBarClass = `navbar ${isNavBarOpen && isMobile && "active"}`;
   const menuBtnBGClass = `portfolioWebsite__sidebar ${
@@ -63,10 +63,10 @@ function NavMenu({
           </ul>
         </div>
         <div className="media-icons">
-          <a href="#" onClick={handleLangChange}>
+          <a className="portfolioWebsite__navigation-menu-link" href="#" onClick={handleLangChange}>
             <p>{mainData.lang}</p>
           </a>
-          <a href="#" onClick={handleThemeChange}>
+          <a className="portfolioWebsite__navigation-menu-link" href="#" onClick={handleThemeChange}>
             <i className={lightData.iconClass}></i>
           </a>
         </div>

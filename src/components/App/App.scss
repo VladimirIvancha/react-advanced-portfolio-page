@@ -1,42 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
 html,
 body {
   scroll-behavior: smooth;
 }
 
+* {
+  @include mpb-0-td;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+
 .portfolioWebsite {
   position: relative;
-  // overflow: auto;
 
   &_active {
     overflow: hidden;
   }
 
-  & * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-
-  /* Custom Scroll Bar CSS */
-  & ::-webkit-scrollbar {
-    width: 10px;
-  }
-  & ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  & ::-webkit-scrollbar-thumb {
-    background: #6e93f7;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-
-  & ::-webkit-scrollbar-thumb:hover {
-    background: #4070f4;
-  }
   /* navbar styling */
-  & nav {
+  &__navigation-menu {
     position: sticky;
     width: 100%;
     padding: 20px 0;
@@ -45,94 +42,108 @@ body {
     font-family: "Ubuntu", sans-serif;
     top: 0;
     background-color: aliceblue;
-  }
-  & nav.sticky {
-    background: #4070f4;
-    padding: 13px 0;
-  }
-  & nav .navbar {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-  }
-  & nav .navbar .logo a {
-    font-weight: 500;
-    font-size: 35px;
-    color: #4070f4;
-  }
-  & nav.sticky .navbar .logo a {
-    color: #fff;
-  }
-  & nav .navbar .menu {
-    display: flex;
-    position: relative;
-  }
-  & nav .navbar .menu li {
-    list-style: none;
-    margin: 0 8px;
-  }
-  & .navbar .menu a {
-    font-size: 18px;
-    font-weight: 500;
-    color: #0e2431;
-    padding: 6px 0;
-    transition: all 0.4s ease;
-  }
-  & .navbar .menu a:hover {
-    color: #4070f4;
-  }
-  & nav.sticky .menu a {
-    color: #fff;
-  }
-  & nav.sticky .menu a:hover {
-    color: #0e2431;
-  }
 
-  & .media-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  & .navbar .media-icons a {
-    color: #4070f4;
-    font-size: 18px;
-    margin: 0 6px;
-  }
-  & nav.sticky .media-icons a {
-    color: #fff;
-  }
-
-  /* Side Navigation Menu Button CSS */
-  & nav .menu-btn,
-  .navbar .menu .cancel-btn {
-    position: absolute;
-    color: #fff;
-    right: 30px;
-    top: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: none;
-  }
-  & nav .menu-btn {
-    color: #4070f4;
-    opacity: 1;
-    pointer-events: auto;
-
-    &_active {
-      opacity: 0;
-      pointer-events: none;
+    & .navbar {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
     }
-  }
-  & nav.sticky .menu-btn {
-    color: #fff;
-  }
-  & .navbar .menu .menu-btn {
-    color: #fff;
+
+    & .navbar .logo a {
+      font-weight: 500;
+      font-size: 35px;
+      color: #4070f4;
+    }
+
+    & .navbar .menu {
+      display: flex;
+      position: relative;
+    }
+
+    & .navbar .menu li {
+      list-style: none;
+      margin: 0 8px;
+    }
+
+    & .navbar .menu .menu-btn {
+      color: #fff;
+    }
+
+    & .media-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-link {
+      color: #4070f4;
+      font-size: 18px;
+      margin: 0 6px;
+    }
+
+    &-item-link {
+      font-size: 18px;
+      font-weight: 500;
+      color: #0e2431;
+      padding: 6px 0;
+      transition: all 0.4s ease;
+    }
+
+    &-item-link:hover {
+      color: #4070f4;
+    }
+
+    & .menu-btn,
+    .navbar .menu .cancel-btn {
+      position: absolute;
+      color: #fff;
+      right: 30px;
+      top: 30px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: none;
+    }
+
+    & .menu-btn {
+      color: #4070f4;
+      opacity: 1;
+      pointer-events: auto;
+
+      &_active {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+
+    &_sticky {
+      background: #4070f4;
+      padding: 13px 0;
+
+      & .navbar .logo a {
+        color: #fff;
+      }
+
+      & .media-icons a {
+        color: #fff;
+      }
+
+      & .menu-btn {
+        color: #fff;
+        top: 20px;
+      }
+
+      & .menu a {
+        color: #fff;
+      }
+
+      & .menu a:hover {
+        color: #0e2431;
+      }
+    }
   }
 
   /* home section styling */
@@ -420,9 +431,6 @@ body {
     text-decoration: underline;
   }
   /* Scroll TO Top Button CSS */
-  //   & .scroll-button a {
-
-  //   }
 
   & .scroll-button-link {
     position: fixed;
@@ -485,7 +493,7 @@ body {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .portfolioWebsite {
     &__sidebar {
       display: flex;

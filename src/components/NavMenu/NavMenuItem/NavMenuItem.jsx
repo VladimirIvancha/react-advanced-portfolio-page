@@ -3,7 +3,7 @@ import React from "react";
 function NavMenuItem({item, handleCancelBtnClick}) {
   return (
     <li>
-      <a href={item.link} onClick={handleCancelBtnClick}>
+      <a className="portfolioWebsite__navigation-menu-item-link" href={item.link} onClick={handleCancelBtnClick}>
         {item.title}
       </a>
     </li>

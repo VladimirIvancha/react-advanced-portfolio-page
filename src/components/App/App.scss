@@ -360,6 +360,16 @@ body {
   & .about-details .right p {
     text-align: justify;
     color: #0e2431;
+    margin: 10px 0;
+  }
+
+  & .about-details .right a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  & .about-details .right a:hover {
+    color: #4070f4;
   }
 
   &_theme-dark .about-details .right p {
@@ -370,6 +380,7 @@ body {
     margin: 16px 0;
   }
   & section .button button {
+    margin: 40px 0 0 0;
     outline: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -397,6 +408,7 @@ body {
   }
 
   & .skills .content {
+    @include fc-center;
     padding: 40px 0;
   }
   & .skills .skills-details {
@@ -410,6 +422,7 @@ body {
   & .skills-details p {
     color: #0e2431;
     text-align: justify;
+    margin: 10px 0;
   }
 
   &_theme-dark .skills-details p {
@@ -449,6 +462,7 @@ body {
     justify-content: space-between;
   }
   & .skills-details .box {
+    @include fc-center;
     width: calc(100% / 2 - 20px);
     margin: 20px 0;
   }
@@ -459,6 +473,19 @@ body {
   & .skills-details .boxes .per {
     font-size: 60px;
     color: #4070f4;
+  }
+
+  & .content a {
+    color: #4070f4;
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
+
+  & .content a:hover {
+    color: #0e2431;
+  }
+  &_theme-dark .content a:hover{
+    color: var(--dark-text-color);
   }
 
   /* My Services CSS */

@@ -428,7 +428,7 @@ body {
   font-size: 60px;
   color: #4070f4;
 }
-.portfolioWebsite .content a {
+.portfolioWebsite__MySkils_link {
   color: #4070f4;
   margin: 40px 0 0 0;
   text-align: center;
@@ -445,6 +445,9 @@ body {
   justify-content: space-between;
 }
 .portfolioWebsite .services .boxes .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 20px 0;
   width: calc(33.3333333333% - 20px);
   text-align: center;
@@ -474,6 +477,20 @@ body {
   background-color: #fff;
   color: #4070f4;
 }
+.portfolioWebsite .services .boxes .box button {
+  background-color: #4070f4;
+}
+.portfolioWebsite .services .boxes .box button a {
+  color: #fff;
+}
+.portfolioWebsite .services .boxes .box:hover button a, .portfolioWebsite button {
+  background-color: #fff;
+  color: #4070f4;
+}
+.portfolioWebsite .services .boxes .box:hover button {
+  background-color: #fff;
+  color: #4070f4;
+}
 .portfolioWebsite .services .boxes .box:hover .topic,
 .portfolioWebsite .services .boxes .box:hover p {
   color: #0e2431;
@@ -482,6 +499,25 @@ body {
 .portfolioWebsite .services .boxes .box:hover .topic,
 .portfolioWebsite .services .boxes .box:hover p {
   color: #fff;
+}
+.portfolioWebsite .services .boxes .box p {
+  margin-bottom: 15px;
+}
+.portfolioWebsite__portfolio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto 0 0 0;
+}
+.portfolioWebsite__portfolio-btn {
+  width: 40%;
+  border-style: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  background-color: #4070f4;
+}
+.portfolioWebsite__portfolio-link {
+  text-decoration: none;
 }
 .portfolioWebsite .contact {
   background: #f0f8ff;

@@ -45,7 +45,7 @@ function MySkills({isEnLangActive}) {
             </div>
           </div>
         </div>
-        <a href={data.link} target="_blank">{data.linkText}</a>
+        <a className="portfolioWebsite__MySkils_link" href={data.link} target="_blank">{data.linkText}</a>
       </div>
     </section>
   );

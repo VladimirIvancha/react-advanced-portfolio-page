@@ -23,6 +23,7 @@ function MyPortfolio({ isEnLangActive }) {
           {data.map((item) => (
             <PortfolioItem key={item.id} item={item} />
           ))}
+          {console.log(data.reverse())}
         </div>
       </div>
     </section>

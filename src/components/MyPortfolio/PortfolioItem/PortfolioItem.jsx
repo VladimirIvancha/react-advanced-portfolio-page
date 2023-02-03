@@ -7,7 +7,8 @@ function PortfolioItem({ item }) {
         <i className={item.iconClass}></i>
       </div>
       <div className="topic">{item.title}</div>
-      <p>{item.text}</p>
+      <p>{item.text1}</p>
+      <p>{item.text2}</p>
       <div className="portfolioWebsite__portfolio-wrapper">
         <button className="portfolioWebsite__portfolio-btn">
           <a className="portfolioWebsite__portfolio-link" href={item.gitLink} target="_blank">

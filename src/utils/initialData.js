@@ -147,68 +147,82 @@ const portfolioTitleEn = "My Portfolio";
 const portfolioInitialDataRu = [
   {
     id: "portfolio-01",
-    link: "#",
-    iconClass: "fas fa-desktop",
-    title: "Web Devlopment",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-tablet-alt",
+    title: "Научиться учиться",
+    text1:
+      "Одностраничный сайт о теории, техниках и процессе обучения. Мои первые шаги в программировании.",
+    text2:
+      "Сверстан по правилам Nested БЭМ с использованием только HTML и CSS. Неадаптивная версткамдля десктопного разрешения. Содержит анимацию, видео с канала YouTube, графические и табличные элементы.",
+    gitLink: "https://github.com/VladimirIvancha/how-to-learn",
     btnGitText: "Код",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/how-to-learn/",
     btnSiteText: "Сайт",
   },
   {
     id: "portfolio-02",
-    link: "#",
-    iconClass: "fas fa-paint-brush",
-    title: "Graphic Design",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-camera-retro",
+    title: "Cайт о путешествиях по России",
+    text1:
+      "Одностраничный сайт о путешествии по России. Знакомит с помощью фотографий и описывает впечатляющие места на территории России, которые можно посетить всей семьей с минимальными затратами.",
+    text2:
+      "Сверстан по правилам Nested БЭМ с использованием HTML, CSS и JavaScript. Адаптивная верстка, содержит flexbox и grid элементы, используются анимация и переходы.",
+    gitLink: "https://github.com/VladimirIvancha/russian-travel",
     btnGitText: "Код",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/russian-travel/",
     btnSiteText: "Сайт",
   },
   {
     id: "portfolio-03",
-    link: "#",
-    iconClass: "fas fa-chart-line",
-    title: "Digital Marketing",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fab fa-android",
+    title: "Pet-проект Cool Colours",
+    text1:
+      "Одностраничный сайт с генерацией 5-ти рандомных цветов из всей палитры hex цветов.",
+    text2:
+      "Сайт сверстан с использованием HTML, CSS и JavaScript. Возможность генерации 5-ти рандомных цветов по нажатию на клавишу 'пробел'. Возможность зафиксировать/расфиксировать понравившийся цвет и продолжить генерацию других. Возможность скопировать цвет в буфер обмена по клику на его номер. Возможность сохранить номера всех 5-ти выбранных цветов через хеш в адресной строке, отправить выбранную палитру другому человеку в виде адресной строки, при вводе которой другой человек видит выбранные цвета.",
+    gitLink: "https://github.com/VladimirIvancha/cool-colours",
     btnGitText: "Код",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/cool-colours/",
     btnSiteText: "Сайт",
   },
   {
     id: "portfolio-04",
-    link: "#",
-    iconClass: "fab fa-android",
-    title: "Icon Design",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-chart-line",
+    title: "Лендниг сайта консалтинговой компании",
+    text1:
+      "Одностраничное приложение для Desktop-разрешения (1440px), сверстанное по макету из Figma.",
+    text2:
+      "Приложение создано на React.js с функциональными компонентами. Использована сторонняя библиотека 'Swyper'. Активные элементы кликабельны. Видеокнопки подгружают видеоролик из YouTube.",
+    gitLink:
+      "https://github.com/VladimirIvancha/react-increase-your-productivity",
     btnGitText: "Код",
-    siteLink: "",
+    siteLink:
+      "https://vladimirivancha.github.io/react-increase-your-productivity/",
     btnSiteText: "Сайт",
   },
   {
     id: "portfolio-05",
-    link: "#",
-    iconClass: "fas fa-camera-retro",
-    title: "Photography",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-paint-brush",
+    title: "Pet-проект Pomodoro timer",
+    text1:
+      "Одностраничное приложение таймера обратного отсчета по системе Pomodoro Technique, заключающейся в интенсивной работе в течении 25 мин и отдыха в течении 5 мин с последующим повторением до 5 циклов работы.",
+    text2:
+      "Приложение создано на React.js с функциональными компонентами. Реализована возможность переходить отдельно на таймер работы и таймер отдыха, а также в качестве бонуса на таймер StopWatch, в котором через установки можно самостоятельно задать интервал времени. Использована адаптивная Flexbox верстка, встроенные хуки UseState и UseEffect, а также сторонний кастомный хук useSound.",
+    gitLink: "https://github.com/VladimirIvancha/pomodoro-timer",
     btnGitText: "Код",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/pomodoro-timer/",
     btnSiteText: "Сайт",
   },
   {
     id: "portfolio-06",
-    link: "#",
-    iconClass: "fas fa-tablet-alt",
-    title: "Apps Devlopment",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-desktop",
+    title: "MVP для HR Яндекс Практикума",
+    text1:
+      "Участие в Хакатоне. Разработка и создание MVP для HR Яндекс Практикума в составе команды из 3-х дизайнеров и 3-х разработчиков.",
+    text2:
+      "Сайт сверстан по BEM с использованием HTML, CSS и JavaScript. Адаптивная верстка: от экрана Desktop (1440px) до Mobile (320px). Использованы flex и grid элементы, iframe для видео и сторонние библиотеки для эфектов (slider). Проект собран с помощью Webpack",
+    gitLink: "https://github.com/VladimirIvancha/hackathon-design-web",
     btnGitText: "Код",
-    siteLink: "",
+    siteLink: "https://loner789.github.io/hackathon-design-web/",
     btnSiteText: "Сайт",
   },
 ];
@@ -216,68 +230,82 @@ const portfolioInitialDataRu = [
 const portfolioInitialDataEn = [
   {
     id: "portfolio-01",
-    link: "#",
-    iconClass: "fas fa-desktop",
-    title: "Web Devlopment",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi? ",
-    gitLink: "",
+    iconClass: "fas fa-tablet-alt",
+    title: "How to Learn",
+    text1:
+      "One-page site about theory, techniques and learning process. My first steps in programming.",
+    text2:
+      "Designed according to Nested BEM rules using only HTML and CSS. Non-adaptive layouts for desktop resolution. Contains animation, YouTube channel video, graphic and table elements.",
+    gitLink: "https://github.com/VladimirIvancha/how-to-learn",
     btnGitText: "Code",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/how-to-learn/",
     btnSiteText: "Site",
   },
   {
     id: "portfolio-02",
-    link: "#",
-    iconClass: "fas fa-paint-brush",
-    title: "Graphic Design",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-camera-retro",
+    title: "Russian travel",
+    text1:
+      "One-page site about traveling in Russia. Introduces with the help of photographs and describes impressive places in Russia that can be visited by the whole family at minimal cost.",
+    text2:
+      "Designed according to Nested BEM rules using HTML, CSS and JavaScript. Adaptive layout, contains flexbox and grid elements, animation and transitions are used.",
+    gitLink: "https://github.com/VladimirIvancha/russian-travel",
     btnGitText: "Code",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/russian-travel/",
     btnSiteText: "Site",
   },
   {
     id: "portfolio-03",
-    link: "#",
-    iconClass: "fas fa-chart-line",
-    title: "Digital Marketing",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fab fa-android",
+    title: "Pet-project Cool Colours",
+    text1:
+      "One-page site with the generation of 5 random colors from the entire palette of hex colors.",
+    text2:
+      "The site is designed using HTML, CSS and JavaScript. Ability to generate 5 random colors by pressing the 'space' key. The ability to fix / unfix the color you like and continue generating others. Ability to copy a color to the clipboard by clicking on its number. The ability to save the numbers of all 5 selected colors through a hash in the address bar, send the selected palette to another person in the form of an address bar, when entered, the other person sees the selected colors.",
+    gitLink: "https://github.com/VladimirIvancha/cool-colours",
     btnGitText: "Code",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/cool-colours/",
     btnSiteText: "Site",
   },
   {
     id: "portfolio-04",
-    link: "#",
-    iconClass: "fab fa-android",
-    title: "Icon Design",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-chart-line",
+    title: "Consulting company website landing page",
+    text1:
+      "Single-page application for Desktop-resolution (1440px), laid out according to the layout from Figma.",
+    text2:
+      "The application is built on React.js with functional components. Third party library 'Swyper' used. Active elements are clickable. Video buttons load a video from YouTube.",
+    gitLink:
+      "https://github.com/VladimirIvancha/react-increase-your-productivity",
     btnGitText: "Code",
-    siteLink: "",
+    siteLink:
+      "https://vladimirivancha.github.io/react-increase-your-productivity/",
     btnSiteText: "Site",
   },
   {
     id: "portfolio-05",
-    link: "#",
-    iconClass: "fas fa-camera-retro",
-    title: "Photography",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-paint-brush",
+    title: "Pet-project Pomodoro timer",
+    text1:
+      "A one-page countdown timer application based on the Pomodoro Technique system, which consists of intensive work for 25 minutes and rest for 5 minutes, followed by repetition of up to 5 cycles of work.",
+    text2:
+      "The application is built on React.js with functional components. Implemented the ability to switch separately to the work timer and the rest timer, as well as as a bonus to the StopWatch timer, in which you can independently set the time interval through the settings. Responsive Flexbox layout, built-in UseState and UseEffect hooks, as well as a third-party custom useSound hook were used.",
+    gitLink: "https://github.com/VladimirIvancha/pomodoro-timer",
     btnGitText: "Code",
-    siteLink: "",
+    siteLink: "https://vladimirivancha.github.io/pomodoro-timer/",
     btnSiteText: "Site",
   },
   {
     id: "portfolio-06",
-    link: "#",
-    iconClass: "fas fa-tablet-alt",
-    title: "Apps Devlopment",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?",
-    gitLink: "",
+    iconClass: "fas fa-desktop",
+    title: "MVP for HR Yandex Workshop",
+    text1:
+      "Participation in the Hackathon. Development and creation of an MVP for HR Yandex Practicum as part of a team of 3 designers and 3 developers.",
+    text2:
+      "The site is made by BEM using HTML, CSS and JavaScript. Responsive layout: from Desktop (1440px) to Mobile (320px). Used flex and grid elements, iframe for video and third-party libraries for effects (slider). The project is built with Webpack",
+    gitLink: "https://github.com/VladimirIvancha/hackathon-design-web",
     btnGitText: "Code",
-    siteLink: "",
+    siteLink: "https://loner789.github.io/hackathon-design-web/",
     btnSiteText: "Site",
   },
 ];
@@ -285,13 +313,15 @@ const portfolioInitialDataEn = [
 const contactMeInitialDataRu = {
   title: "Контакты",
   subtitle: "Остались вопросы?",
-  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.",
+  text1: "Со мной можно связаться как по электронной почте, так и через социаьные сети. Все контакты оставляю ниже. Всегда готов и с радостью отвечу на любые вопросы. Благодарю Вас за то, что посетили мою страничку.",
+  text2: "Всего Вам доброго!",
   btnText: "Напишите мне",
 };
 const contactMeInitialDataEn = {
   title: "Contact Me",
   subtitle: "Have Any Questions?",
-  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.",
+  text1: "I can be contacted both by e-mail and through social networks. I leave all contacts below. Always ready and happy to answer any questions. Thank you for visiting my page.",
+  text2: "All the best!",
   btnText: "Write Me",
 };
 

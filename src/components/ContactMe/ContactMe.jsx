@@ -17,7 +17,8 @@ function ContactMe({ isEnLangActive }) {
         </div>
         <div className="text">
           <div className="topic">{data.subtitle}</div>
-          <p>{data.text}</p>
+          <p>{data.text1}</p>
+          <p>{data.text2}</p>
           <div className="button">
             <button>{data.btnText}</button>
           </div>

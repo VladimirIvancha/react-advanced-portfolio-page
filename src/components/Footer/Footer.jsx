@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <div className="text">
         <span>
-          Created By <a href="#">Vladimir Ivancha</a> | &#169; 2023 All Rights
+          E-mail: <a href="mailto:Vladimir.Ivancha@mail.ru">Vladimir.Ivancha@mail.ru</a> | &#169; 2023 All Rights
           Reserved
         </span>
       </div>

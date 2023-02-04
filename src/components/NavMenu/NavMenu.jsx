@@ -1,7 +1,7 @@
 import React from "react";
 import {
-    darkTheme,
-    lightTheme,
+  darkTheme,
+  lightTheme,
   navInitialDataEn,
   navInitialDataRu,
   navMenuInitialDataEn,
@@ -61,21 +61,36 @@ function NavMenu({
                 handleCancelBtnClick={handleCancelBtnClick}
               />
             ))}
+            <div className="cancel-btn" onClick={handleCancelBtnClick}>
+              <i className="fas fa-times"></i>
+            </div>
             <div className={mobileMediaIconsClass}>
-                <a className="portfolioWebsite__navigation-menu-link" onClick={handleLangChange}>
-                    <p>{mainData.lang}</p>
-                </a>
-                <a className="portfolioWebsite__navigation-menu-link" onClick={handleThemeChange}>
-                    <i className={lightData.iconClass}></i>
-                </a>
+              <a
+                className="portfolioWebsite__navigation-menu-link"
+                onClick={handleLangChange}
+              >
+                <p>{mainData.lang}</p>
+              </a>
+              <a
+                className="portfolioWebsite__navigation-menu-link"
+                onClick={handleThemeChange}
+              >
+                <i className={lightData.iconClass}></i>
+              </a>
             </div>
           </ul>
         </div>
         <div className="media-icons">
-          <a className="portfolioWebsite__navigation-menu-link" onClick={handleLangChange}>
+          <a
+            className="portfolioWebsite__navigation-menu-link"
+            onClick={handleLangChange}
+          >
             <p>{mainData.lang}</p>
           </a>
-          <a className="portfolioWebsite__navigation-menu-link" onClick={handleThemeChange}>
+          <a
+            className="portfolioWebsite__navigation-menu-link"
+            onClick={handleThemeChange}
+          >
             <i className={lightData.iconClass}></i>
           </a>
         </div>

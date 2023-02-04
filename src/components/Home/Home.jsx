@@ -1,7 +1,7 @@
 import React from "react";
 import { homeInitialDataEn, homeInitialDataRu } from "../../utils/initialData";
 
-function Home({isEnLangActive}) {
+function Home({ isEnLangActive }) {
   const data = !isEnLangActive ? homeInitialDataRu : homeInitialDataEn;
 
   return (
@@ -14,7 +14,9 @@ function Home({isEnLangActive}) {
           <div className="text-four">{data.location}</div>
         </div>
         <div className="button">
-          <button>{data.btnText}</button>
+          <a className="home-link" href="#contact">
+            <button>{data.btnText}</button>
+          </a>
         </div>
       </div>
     </section>

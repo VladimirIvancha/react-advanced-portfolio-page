@@ -147,7 +147,7 @@ const portfolioTitleEn = "My Portfolio";
 const portfolioInitialDataRu = [
   {
     id: "portfolio-01",
-    iconClass: "fas fa-tablet-alt",
+    iconClass: "fa-solid fa-graduation-cap",
     title: "Научиться учиться",
     text1:
       "Одностраничный сайт о теории, техниках и процессе обучения. Мои первые шаги в программировании.",
@@ -160,7 +160,7 @@ const portfolioInitialDataRu = [
   },
   {
     id: "portfolio-02",
-    iconClass: "fas fa-camera-retro",
+    iconClass: "fa-solid fa-car-side",
     title: "Cайт о путешествиях по России",
     text1:
       "Одностраничный сайт о путешествии по России. Знакомит с помощью фотографий и описывает впечатляющие места на территории России, которые можно посетить всей семьей с минимальными затратами.",
@@ -173,7 +173,7 @@ const portfolioInitialDataRu = [
   },
   {
     id: "portfolio-03",
-    iconClass: "fab fa-android",
+    iconClass: "fas fa-paint-brush",
     title: "Pet-проект Cool Colours",
     text1:
       "Одностраничный сайт с генерацией 5-ти рандомных цветов из всей палитры hex цветов.",
@@ -201,7 +201,7 @@ const portfolioInitialDataRu = [
   },
   {
     id: "portfolio-05",
-    iconClass: "fas fa-paint-brush",
+    iconClass: "fa-solid fa-stopwatch",
     title: "Pet-проект Pomodoro timer",
     text1:
       "Одностраничное приложение таймера обратного отсчета по системе Pomodoro Technique, заключающейся в интенсивной работе в течении 25 мин и отдыха в течении 5 мин с последующим повторением до 5 циклов работы.",
@@ -230,7 +230,7 @@ const portfolioInitialDataRu = [
 const portfolioInitialDataEn = [
   {
     id: "portfolio-01",
-    iconClass: "fas fa-tablet-alt",
+    iconClass: "fa-solid fa-graduation-cap",
     title: "How to Learn",
     text1:
       "One-page site about theory, techniques and learning process. My first steps in programming.",
@@ -243,7 +243,7 @@ const portfolioInitialDataEn = [
   },
   {
     id: "portfolio-02",
-    iconClass: "fas fa-camera-retro",
+    iconClass: "fa-solid fa-car-side",
     title: "Russian travel",
     text1:
       "One-page site about traveling in Russia. Introduces with the help of photographs and describes impressive places in Russia that can be visited by the whole family at minimal cost.",
@@ -256,7 +256,7 @@ const portfolioInitialDataEn = [
   },
   {
     id: "portfolio-03",
-    iconClass: "fab fa-android",
+    iconClass: "fas fa-paint-brush",
     title: "Pet-project Cool Colours",
     text1:
       "One-page site with the generation of 5 random colors from the entire palette of hex colors.",
@@ -284,7 +284,7 @@ const portfolioInitialDataEn = [
   },
   {
     id: "portfolio-05",
-    iconClass: "fas fa-paint-brush",
+    iconClass: "fa-solid fa-stopwatch",
     title: "Pet-project Pomodoro timer",
     text1:
       "A one-page countdown timer application based on the Pomodoro Technique system, which consists of intensive work for 25 minutes and rest for 5 minutes, followed by repetition of up to 5 cycles of work.",

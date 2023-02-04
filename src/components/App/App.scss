@@ -209,8 +209,8 @@ body {
     height: 100vh;
     width: 100%;
     background: url(../assets/images/Background.png) no-repeat;
-    background-size: auto;
-    background-position: bottom -120px right -500px;
+    background-size: cover;
+    background-position: bottom -305px right -500px;
     background-attachment: fixed;
     font-family: "Ubuntu", sans-serif;
   }
@@ -277,6 +277,19 @@ body {
   & .home .button button:hover {
     border-color: #4070f4;
     background-color: #fff;
+    color: #4070f4;
+  }
+
+  & .home .button a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  & .home .button a:hover {
+    color: #4070f4;
+  }
+
+  & .home .button button:hover .home-link {
     color: #4070f4;
   }
 
@@ -586,7 +599,7 @@ body {
 
     &__links {
       color: #4070f4;
-      font-size: 18px;
+      font-size: 24px;
       margin: 0 6px;
     }
   }

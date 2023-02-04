@@ -20,17 +20,31 @@ function ContactMe({ isEnLangActive }) {
           <p>{data.text1}</p>
           <p>{data.text2}</p>
           <div className="button">
-            <button>{data.btnText}</button>
+            <a href="mailto:Vladimir.Ivancha@mail.ru">
+              <button>{data.btnText}</button>
+            </a>
           </div>
           <div className="media-icons">
-            <a className="contact__links" href="#">
-              <i className="fab fa-facebook-f"></i>
+            <a
+              className="contact__links"
+              href="https://vk.com/vladimirivancha"
+              target="_blank"
+            >
+              <i className="fa-brands fa-vk"></i>
             </a>
-            <a className="contact__links" href="#">
-              <i className="fab fa-twitter"></i>
+            <a
+              className="contact__links"
+              href="https://telegram.me/VladimirIvancha"
+              target="_blank"
+            >
+              <i className="fa-brands fa-telegram"></i>
             </a>
-            <a className="contact__links" href="#">
-              <i className="fab fa-instagram"></i>
+            <a
+              className="contact__links"
+              href="https://www.linkedin.com/in/vladimir-ivancha"
+              target="_blank"
+            >
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>

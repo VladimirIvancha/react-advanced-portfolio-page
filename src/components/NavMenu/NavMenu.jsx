@@ -41,9 +41,11 @@ function NavMenu({
   }
   function handleThemeChange() {
     setDarkThemeActive(!isDarkThemeActive);
+    setNavBarOpen(false);
   }
   function handleLangChange() {
     setEnLang(!isEnLangActive);
+    setNavBarOpen(false);
   }
 
   return (

@@ -225,6 +225,32 @@ const portfolioInitialDataRu = [
     siteLink: "https://loner789.github.io/hackathon-design-web/",
     btnSiteText: "Сайт",
   },
+  {
+    id: "portfolio-07",
+    iconClass: "fas fa-paint-brush",
+    title: "Полноценный сайт для компании NPD-упаковка",
+    text1:
+      "Мой первый коммерческий проект. Многостраничный сайт с информацией о компании, формами обратной связи и виджетом обратного звонка.",
+    text2:
+      "Приложение создано на React.js с функциональными компонентами с помощью Bootstrap и SASS. Адаптивная верстка. Содержит свайпер, iframe видео, виджет обратного вызова, форму обратной связи и вставку Яндекс.Карт.",
+    gitLink: "https://github.com/VladimirIvancha/com-react-npd-upakovka",
+    btnGitText: "Код",
+    siteLink: "https://vladimirivancha.github.io/com-react-npd-upakovka/",
+    btnSiteText: "Сайт",
+  },
+  {
+    id: "portfolio-08",
+    iconClass: "fas fa-chart-line",
+    title: "Pet-проект My Favorite Recipes",
+    text1:
+      "Сайт с моими еженедельными рецептами блюд, салатов, напитков и закаток.",
+    text2:
+      "Приложение создано на React.js с функциональными компонентами с помощью Bootstrap и SASS. Адаптивная верстка. В разработке.",
+    gitLink: "https://github.com/VladimirIvancha/pet-react-my-favorite-recipes",
+    btnGitText: "Код",
+    siteLink: "https://vladimirivancha.github.io/pet-react-my-favorite-recipes/",
+    btnSiteText: "Сайт",
+  },
 ];
 
 const portfolioInitialDataEn = [

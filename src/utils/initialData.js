@@ -227,7 +227,7 @@ const portfolioInitialDataRu = [
   },
   {
     id: "portfolio-07",
-    iconClass: "fas fa-paint-brush",
+    iconClass: "fa-solid fa-gear",
     title: "Полноценный сайт для компании NPD-упаковка",
     text1:
       "Мой первый коммерческий проект. Многостраничный сайт с информацией о компании, формами обратной связи и виджетом обратного звонка.",
@@ -240,7 +240,7 @@ const portfolioInitialDataRu = [
   },
   {
     id: "portfolio-08",
-    iconClass: "fas fa-chart-line",
+    iconClass: "fa-solid fa-utensils",
     title: "Pet-проект My Favorite Recipes",
     text1:
       "Сайт с моими еженедельными рецептами блюд, салатов, напитков и закаток.",

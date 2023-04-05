@@ -20,7 +20,7 @@ function MyPortfolio({ isEnLangActive }) {
           <span>{title}</span>
         </div>
         <div className="boxes">
-          {data.map((item) => (
+          {data.reverse().map((item) => (
             <PortfolioItem key={item.id} item={item} />
           ))}
           {console.log(data.reverse())}
